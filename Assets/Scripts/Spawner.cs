@@ -7,31 +7,43 @@ public class Spawner : MonoBehaviour {
 	public int goodGuyCount;
 	public GameObject enemy2;
 	public GameObject goodGuy;
-	float timeCount_enemy;
-	float timeCount_goodGuy;
-
-	void Start () {
-	
-	}
+	public GameObject PowerUp1;
+	public GameObject PowerUp2;
+	public float timeCount_enemy;
+	public float timeCount_goodGuy;
+	public float timeCount_PowerUp;
 	
 	void spawnEnemy () {
 		if (enemyCount < 35) {
-			Vector3 spawnLocation = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (-4.0f, 4.0f));
-			Instantiate (enemy2, spawnLocation, Quaternion.identity);
+			Vector3 spawnLocation1 = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (-4.0f, 4.0f));
+			Instantiate (enemy2, spawnLocation1, Quaternion.identity);
 			timeCount_enemy = 0.0f;
 		}
 	}
 
 	void spawnGoodGuy () {
-		Vector3 spawnLocation = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (0.0f, 4.0f));
-		Instantiate (goodGuy, spawnLocation, Quaternion.identity);
+		Vector3 spawnLocation2 = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (-4.0f, 0.0f));
+		Instantiate (goodGuy, spawnLocation2, Quaternion.identity);
 		timeCount_goodGuy = 0.0f;
 	}
 
+	void spawnPowerUp () {
+		int powerChoose = Random.Range ((int)0, (int)2);
+		GameObject powerUp;
+		if (powerChoose == 1) {
+			powerUp = PowerUp1;
+		} else {
+			powerUp = PowerUp2;
+		}
+		Vector3 spawnLocation3 = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (-4.0f, 4.0f));
+		Instantiate (powerUp, spawnLocation3, Quaternion.identity);
+		timeCount_PowerUp = 0.0f;
+	}
 
 	void Update () {
 		timeCount_enemy += 1.0f;
 		timeCount_goodGuy += 1.0f;
+		timeCount_PowerUp += 1.0f;
 
 		GameObject[] count = GameObject.FindGameObjectsWithTag("enemy");
 		enemyCount = count.Length;
@@ -42,6 +54,10 @@ public class Spawner : MonoBehaviour {
 
 		if (timeCount_goodGuy >= 3600.0f) {
 			spawnGoodGuy ();
+		}
+
+		if (timeCount_PowerUp >= 1800.0f) {
+			spawnPowerUp ();
 		}
 	}
 }
