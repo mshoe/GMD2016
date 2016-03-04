@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour {
 	public GameObject goodGuy;
 	public GameObject PowerUp1;
 	public GameObject PowerUp2;
+	public GameObject PowerUp3;
 	public float timeCount_enemy;
 	public float timeCount_goodGuy;
 	public float timeCount_PowerUp;
@@ -28,12 +29,14 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void spawnPowerUp () {
-		int powerChoose = Random.Range ((int)0, (int)2);
+		int powerChoose = Random.Range ((int)0, (int)3);
 		GameObject powerUp;
 		if (powerChoose == 1) {
 			powerUp = PowerUp1;
-		} else {
+		} else if (powerChoose == 2) {
 			powerUp = PowerUp2;
+		} else {
+			powerUp = PowerUp3;
 		}
 		Vector3 spawnLocation3 = new Vector3 (Random.Range (-4.0f, 4.0f), 1.0f, Random.Range (-4.0f, 4.0f));
 		Instantiate (powerUp, spawnLocation3, Quaternion.identity);
@@ -47,7 +50,7 @@ public class Spawner : MonoBehaviour {
 
 		GameObject[] count = GameObject.FindGameObjectsWithTag("enemy");
 		enemyCount = count.Length;
-		if (timeCount_enemy >= 120.0f)
+		if (timeCount_enemy >= 90.0f)
 		{
 			spawnEnemy ();
 		}
@@ -56,7 +59,7 @@ public class Spawner : MonoBehaviour {
 			spawnGoodGuy ();
 		}
 
-		if (timeCount_PowerUp >= 1800.0f) {
+		if (timeCount_PowerUp >= 1200.0f) {
 			spawnPowerUp ();
 		}
 	}

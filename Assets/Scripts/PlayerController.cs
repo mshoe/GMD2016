@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
 
@@ -19,17 +20,20 @@ public class PlayerController : MonoBehaviour {
 	public bool unFaithPower = false;
 	public int unFaithTimer = 0;
 
+	//two leapFaith bools, same reason^
+	public bool leapFaith = false;
+	public bool leapFaithPower = false;
+	public int leapFaithTimer = 0;
+
 	void Start() {
 		rb = GetComponent<Rigidbody> ();
 		halo = (Behaviour)GetComponent ("Halo");
 	}
-
+		
 	void OnCollisionEnter (Collision col)
 	{
-		if (col.gameObject.CompareTag ("ground")) {
+		if (col.collider.CompareTag ("ground")) {
 			onGround = true;
-		} else {
-			onGround = false;
 		}
 	}
 
@@ -42,13 +46,13 @@ public class PlayerController : MonoBehaviour {
 			halo.enabled = true;
 			speedPowerTimer = 600;
 		}
-		if (speedPowerTimer > 0) {
+		else if (speedPowerTimer > 0) {
 			speedPowerTimer -= 1;
 		}
-		if (speedPowerTimer <= 0) {
+		else if (speedPowerTimer <= 0) {
 			speedPowerTimer = 0;
 			speed = 10;
-			strength = 150;
+			strength = 300;
 			halo.enabled = false;
 		}
 	}
@@ -56,26 +60,37 @@ public class PlayerController : MonoBehaviour {
 	void unFaithPowerUp()
 	{
 		if (unFaithPower) {
-			unFaithTimer = 900;
+			unFaithTimer = 300;
 			unFaithPower = false;
 			unFaith = true;
 		}
-		if (unFaithTimer > 0) {
+		else if (unFaithTimer > 0) {
 			unFaithTimer -= 1;
 		}
-		if (unFaithTimer <= 0) {
+		else if (unFaithTimer <= 0) {
 			unFaithTimer = 0;
 			unFaith = false;
 		}
 	}
 
+	void leapFaithPowerUp()
+	{
+		if (leapFaithPower) {
+			leapFaithTimer = 600;
+			leapFaithPower = false;
+			leapFaith = true;
+		} 
+		else if (leapFaithTimer > 0) {
+			leapFaithTimer -= 1;
+		} 
+		else if (leapFaithTimer <= 0) {
+			leapFaithTimer = 0;
+			leapFaith = false;
+		}
+	}
+
 	void FixedUpdate ()
 	{
-		//speedPowerUp
-		speedPowerUp ();
-
-		//unFaithPowerUp
-		unFaithPowerUp ();
 
 		//Movement Physics
 		float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -90,5 +105,14 @@ public class PlayerController : MonoBehaviour {
 		Vector3 finalMovement = new Vector3 (moveHorizontal * speed, jump * strength, moveVertical * speed);
 
 		rb.AddForce (finalMovement);
+
+		//speedPowerUp
+		speedPowerUp ();
+
+		//unFaithPowerUp
+		unFaithPowerUp ();
+
+		//leapFaithPowerUp
+		leapFaithPowerUp ();
 	}
 }

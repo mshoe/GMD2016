@@ -15,7 +15,7 @@ public class PowerUp2 : MonoBehaviour {
 
 	void Update(){
 		time += 1;
-		if (time == 900 && Clone) {
+		if (time == 600 && Clone) {
 			Destroy (gameObject);
 		}
 	}

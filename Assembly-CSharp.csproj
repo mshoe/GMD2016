@@ -50,18 +50,26 @@
      <Compile Include="Assets\Scripts\Enemy3AI.cs" />
      <Compile Include="Assets\Scripts\Enemy4AI.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\GameOver\gameOverMiniGame.cs" />
+     <Compile Include="Assets\Scripts\GroundController.cs" />
      <Compile Include="Assets\Scripts\HaloBeat.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerUp1.cs" />
      <Compile Include="Assets\Scripts\PowerUp2.cs" />
+     <Compile Include="Assets\Scripts\PowerUp3.cs" />
      <Compile Include="Assets\Scripts\PreserveData.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\WinDetector.cs" />
+     <Compile Include="Assets\Scripts\addingAnimation.cs" />
+     <Compile Include="Assets\Scripts\cubeChange.cs" />
      <Compile Include="Assets\Scripts\gameOver.cs" />
      <Compile Include="Assets\Scripts\goodGuyScript.cs" />
+     <Compile Include="Assets\Scripts\level_1\winCondition1.cs" />
+     <Compile Include="Assets\Scripts\mainMenu\mainMenuScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
