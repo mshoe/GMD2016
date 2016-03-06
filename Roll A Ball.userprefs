@@ -1,22 +1,25 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WinDetector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\level_4\waterBehaviour.cs">
     <Files>
+      <File FileName="Assets\Scripts\level_4\doorFunction.cs" Line="25" Column="9" />
+      <File FileName="Assets\Scripts\level_4\roofBehaviour.cs" Line="49" Column="3" />
+      <File FileName="Assets\Scripts\level_4\waterBehaviour.cs" Line="17" Column="2" />
       <File FileName="Assets\Scripts\PowerUp2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\mainMenu\mainMenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameOver\gameOverMiniGame.cs" Line="22" Column="9" />
       <File FileName="Assets\Scripts\Enemy2AI.cs" Line="114" Column="13" />
       <File FileName="Assets\Scripts\goodGuyScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="37" Column="4" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="33" Column="2" />
       <File FileName="Assets\Scripts\PowerUp3.cs" Line="25" Column="46" />
-      <File FileName="Assets\Scripts\PowerUp1.cs" Line="26" Column="7" />
-      <File FileName="Assets\Scripts\Spawner.cs" Line="53" Column="28" />
-      <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WinDetector.cs" Line="11" Column="62" />
+      <File FileName="Assets\Scripts\PowerUp1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="11" Column="3" />
+      <File FileName="Assets\Scripts\WinDetector.cs" Line="8" Column="2" />
       <File FileName="Assets\Scripts\Score.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GroundController.cs" Line="18" Column="16" />
-      <File FileName="Assets\Scripts\cubeChange.cs" Line="8" Column="18" />
+      <File FileName="Assets\Scripts\GroundController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\cubeChange.cs" Line="12" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

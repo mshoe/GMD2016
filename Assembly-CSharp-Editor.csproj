@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\ReplaceGame.cs" />
      <Compile Include="Assets\Editor\ReplaceGameObjects.cs" />
+     <None Include="Assets\Wood texture floor_01\readme.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
