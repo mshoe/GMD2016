@@ -78,9 +78,9 @@ public class Enemy2AI : MonoBehaviour {
 		/* Look at Player */
 		if (!unFaithful) {
 			
-			transform.rotation = Quaternion.Slerp (transform.rotation
-				, Quaternion.LookRotation (tr_Player.position - transform.position)
-				, f_RotSpeed * Time.deltaTime);
+			//transform.rotation = Quaternion.Slerp (transform.rotation
+			//	, Quaternion.LookRotation (tr_Player.position - transform.position)
+			//	, f_RotSpeed * Time.deltaTime);
 
 			/* Move at Player */
 			transform.position += transform.forward * f_MoveSpeed * Time.deltaTime;
@@ -97,9 +97,9 @@ public class Enemy2AI : MonoBehaviour {
 			halo.enabled = false;
 		} else if (unFaithful) {
 			
-			transform.rotation = Quaternion.Slerp (transform.rotation
-				, Quaternion.LookRotation (Win.position - transform.position)
-				, f_RotSpeed * Time.deltaTime);
+			//transform.rotation = Quaternion.Slerp (transform.rotation
+			//	, Quaternion.LookRotation (Win.position - transform.position)
+			//	, f_RotSpeed * Time.deltaTime);
 
 			/* Move at Player */
 			transform.position += transform.forward * f_MoveSpeed * Time.deltaTime;

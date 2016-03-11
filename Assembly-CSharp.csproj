@@ -68,11 +68,15 @@
      <Compile Include="Assets\Scripts\cubeChange.cs" />
      <Compile Include="Assets\Scripts\gameOver.cs" />
      <Compile Include="Assets\Scripts\goodGuyScript.cs" />
+     <Compile Include="Assets\Scripts\level_1\nextLevel1to2.cs" />
      <Compile Include="Assets\Scripts\level_1\winCondition1.cs" />
+     <Compile Include="Assets\Scripts\level_2\nextLevel2to3.cs" />
+     <Compile Include="Assets\Scripts\level_3\nextLevel3to4.cs" />
      <Compile Include="Assets\Scripts\level_4\doorFunction.cs" />
      <Compile Include="Assets\Scripts\level_4\roofBehaviour.cs" />
      <Compile Include="Assets\Scripts\level_4\waterBehaviour.cs" />
      <Compile Include="Assets\Scripts\mainMenu\mainMenuScript.cs" />
+     <Compile Include="Assets\Scripts\mouseAI.cs" />
      <None Include="Assets\Wood texture floor_01\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
