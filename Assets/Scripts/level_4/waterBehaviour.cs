@@ -6,6 +6,7 @@ public class waterBehaviour : MonoBehaviour {
 	public int score;
 	public int scoreTotal;
 	public bool nextLevel;
+
 	void Start () {
 		nextLevel = false;
 		score = 0;
@@ -17,6 +18,8 @@ public class waterBehaviour : MonoBehaviour {
 		if (col.gameObject.CompareTag ("enemy")) {
 			Destroy (col.gameObject);
 			score += 1;
+		} else if (col.gameObject.CompareTag ("Player")) {
+			Destroy (col.gameObject);
 		}
 	}
 

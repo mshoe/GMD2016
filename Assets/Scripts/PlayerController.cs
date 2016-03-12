@@ -37,57 +37,57 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void speedPowerUp()
-	{
-		if (speedPower) {
-			speed += 25;
-			strength += 150;
-			speedPower = false;
-			halo.enabled = true;
-			speedPowerTimer = 600;
-		}
-		else if (speedPowerTimer > 0) {
-			speedPowerTimer -= 1;
-		}
-		else if (speedPowerTimer <= 0) {
-			speedPowerTimer = 0;
-			speed = 10;
-			strength = 300;
-			halo.enabled = false;
-		}
-	}
-		
-	void unFaithPowerUp()
-	{
-		if (unFaithPower) {
-			unFaithTimer = 300;
-			unFaithPower = false;
-			unFaith = true;
-		}
-		else if (unFaithTimer > 0) {
-			unFaithTimer -= 1;
-		}
-		else if (unFaithTimer <= 0) {
-			unFaithTimer = 0;
-			unFaith = false;
-		}
-	}
-
-	void leapFaithPowerUp()
-	{
-		if (leapFaithPower) {
-			leapFaithTimer = 600;
-			leapFaithPower = false;
-			leapFaith = true;
-		} 
-		else if (leapFaithTimer > 0) {
-			leapFaithTimer -= 1;
-		} 
-		else if (leapFaithTimer <= 0) {
-			leapFaithTimer = 0;
-			leapFaith = false;
-		}
-	}
+//	void speedPowerUp()
+//	{
+//		if (speedPower) {
+//			speed += 25;
+//			strength += 150;
+//			speedPower = false;
+//			halo.enabled = true;
+//			speedPowerTimer = 600;
+//		}
+//		else if (speedPowerTimer > 0) {
+//			speedPowerTimer -= 1;
+//		}
+//		else if (speedPowerTimer <= 0) {
+//			speedPowerTimer = 0;
+//			speed = 10;
+//			strength = 300;
+//			halo.enabled = false;
+//		}
+//	}
+//		
+//	void unFaithPowerUp()
+//	{
+//		if (unFaithPower) {
+//			unFaithTimer = 300;
+//			unFaithPower = false;
+//			unFaith = true;
+//		}
+//		else if (unFaithTimer > 0) {
+//			unFaithTimer -= 1;
+//		}
+//		else if (unFaithTimer <= 0) {
+//			unFaithTimer = 0;
+//			unFaith = false;
+//		}
+//	}
+//
+//	void leapFaithPowerUp()
+//	{
+//		if (leapFaithPower) {
+//			leapFaithTimer = 600;
+//			leapFaithPower = false;
+//			leapFaith = true;
+//		} 
+//		else if (leapFaithTimer > 0) {
+//			leapFaithTimer -= 1;
+//		} 
+//		else if (leapFaithTimer <= 0) {
+//			leapFaithTimer = 0;
+//			leapFaith = false;
+//		}
+//	}
 
 	void FixedUpdate ()
 	{
@@ -105,14 +105,14 @@ public class PlayerController : MonoBehaviour {
 		Vector3 finalMovement = new Vector3 (moveHorizontal * speed, jump * strength, moveVertical * speed);
 
 		transform.position += finalMovement * Time.deltaTime;
-
-		//speedPowerUp
-		speedPowerUp ();
-
-		//unFaithPowerUp
-		unFaithPowerUp ();
-
-		//leapFaithPowerUp
-		leapFaithPowerUp ();
+//
+//		//speedPowerUp
+//		speedPowerUp ();
+//
+//		//unFaithPowerUp
+//		unFaithPowerUp ();
+//
+//		//leapFaithPowerUp
+//		leapFaithPowerUp ();
 	}
 }
