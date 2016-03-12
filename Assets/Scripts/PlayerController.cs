@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour {
 
 		Vector3 finalMovement = new Vector3 (moveHorizontal * speed, jump * strength, moveVertical * speed);
 
-		rb.AddForce (finalMovement);
+		transform.position += finalMovement * Time.deltaTime;
 
 		//speedPowerUp
 		speedPowerUp ();
