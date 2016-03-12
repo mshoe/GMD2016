@@ -1,60 +1,46 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 17ee97ec42f544252910d1ab2ee957e0
-timeCreated: 1457740203
+guid: 7c949fd23a4ce41c29d97400ba2b6f2b
+timeCreated: 1457742778
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: 0-top_control
-    100002: Armature
-    100004: Bone
-    100006: Bone_001
-    100008: Bone_002
-    100010: Bone_003
-    100012: Bone_004
-    100014: Bone_005
-    100016: Bone_006
-    100018: Bone_007
-    100020: //RootNode
-    100022: Sphere_001
-    100024: Sphere_006
-    400000: 0-top_control
-    400002: Armature
-    400004: Bone
-    400006: Bone_001
-    400008: Bone_002
-    400010: Bone_003
-    400012: Bone_004
-    400014: Bone_005
-    400016: Bone_006
-    400018: Bone_007
-    400020: //RootNode
-    400022: Sphere_001
-    400024: Sphere_006
+    100000: //RootNode
+    100002: Sphere_001
+    100004: Sphere_006
+    100006: Armature
+    100008: Bone
+    100010: Bone_001
+    100012: Bone_002
+    100014: Bone_003
+    100016: Bone_004
+    100018: Bone_005
+    100020: Bone_006
+    100022: Bone_007
+    100024: Bone_008
+    400000: //RootNode
+    400002: Sphere_001
+    400004: Sphere_006
+    400006: Armature
+    400008: Bone
+    400010: Bone_001
+    400012: Bone_002
+    400014: Bone_003
+    400016: Bone_004
+    400018: Bone_005
+    400020: Bone_006
+    400022: Bone_007
+    400024: Bone_008
     2300000: Sphere_001
+    2300002: Sphere_006
     3300000: Sphere_001
+    3300002: Sphere_006
     4300000: Sphere_006
     4300002: Sphere_001
     7400000: Default Take
-    7400002: ArmatureAction_001
+    7400002: ArmatureAction
     9500000: //RootNode
     13700000: Sphere_006
-=======
-guid: 61a3207a38179e748a4d76fd5c60ba0b
-timeCreated: 1457712274
-licenseType: Free
-ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Sphere_002
-    7400000: Default Take
-    9500000: //RootNode
->>>>>>> c817badd5c143495a5e363d4a584a12fdb620b32
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,10 +48,6 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-<<<<<<< HEAD
-=======
-    resampleRotations: 1
->>>>>>> c817badd5c143495a5e363d4a584a12fdb620b32
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -73,15 +55,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
-<<<<<<< HEAD
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-=======
-    animationRotationError: 0.5
-    animationPositionError: 0.5
-    animationScaleError: 0.5
->>>>>>> c817badd5c143495a5e363d4a584a12fdb620b32
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -105,34 +81,20 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-<<<<<<< HEAD
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-=======
-    normalImportMode: 0
-    tangentImportMode: 3
->>>>>>> c817badd5c143495a5e363d4a584a12fdb620b32
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-<<<<<<< HEAD
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
     legTwist: .5
     armStretch: .0500000007
     legStretch: .0500000007
-=======
-    armTwist: 0.5
-    foreArmTwist: 0.5
-    upperLegTwist: 0.5
-    legTwist: 0.5
-    armStretch: 0.05
-    legStretch: 0.05
->>>>>>> c817badd5c143495a5e363d4a584a12fdb620b32
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
