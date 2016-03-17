@@ -25,4 +25,11 @@ public class gameOverMiniGame : MonoBehaviour {
 		Destroy (Music);
 		Application.LoadLevel ("mainMenu");
 	}
+
+	public void playAgainYellowBall()
+	{
+		Destroy (WinDetector);
+		Destroy (Music);
+		Application.LoadLevel ("yellowMode");
+	}
 }

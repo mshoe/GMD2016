@@ -97,10 +97,10 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 		float jump = 0.0f;
 
-		if (Input.GetKeyDown (KeyCode.Space) && onGround) {
-			jump = 1.0f;
-			onGround = false;
-		}
+//		if (Input.GetKeyDown (KeyCode.Space) && onGround) {
+//			jump = 1.0f;
+//			onGround = false;
+//		}
 
 		Vector3 finalMovement = new Vector3 (moveHorizontal * speed, jump * strength, moveVertical * speed);
 

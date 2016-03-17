@@ -14,7 +14,7 @@ public class nextLevel5to6 : MonoBehaviour {
 	void OnCollisionEnter (Collision col) {
 		if (col.gameObject.CompareTag ("Player")) {
 			if (halo.enabled) {
-				Application.LoadLevel ("level_6");
+				Application.LoadLevel ("mainMenu");
 			}
 		}
 	}

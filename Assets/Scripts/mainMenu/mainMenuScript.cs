@@ -5,7 +5,7 @@ public class mainMenuScript : MonoBehaviour {
 
 	public void ArcadeMode ()
 	{
-		Application.LoadLevel ("minigame");
+		Application.LoadLevel ("CharacterBios");
 	}
 
 	public void StoryMode ()
@@ -16,5 +16,10 @@ public class mainMenuScript : MonoBehaviour {
 	public void QuitGame()
 	{
 		Application.Quit ();
+	}
+
+	public void Credits()
+	{
+		Application.LoadLevel ("credits");
 	}
 }

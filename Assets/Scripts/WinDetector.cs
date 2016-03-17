@@ -8,7 +8,6 @@ public class WinDetector : MonoBehaviour {
 	void OnCollisionEnter (Collision col)
 	{
 		if (col.gameObject.CompareTag ("enemy")) {
-			col.gameObject.GetComponent<Enemy2AI> ().deathTime = true;
 			Destroy (col.gameObject);
 			score += 1;
 		} 
