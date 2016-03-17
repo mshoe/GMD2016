@@ -59,6 +59,40 @@ ModelImporter:
     100102: Root3
     100104: Spine
     100106: Spine_0
+    100108: Armature
+    100110: Bone
+    100112: Bone_001
+    100114: Bone_002
+    100116: Bone_003
+    100118: Bone_004
+    100120: Bone_005
+    100122: Bone_006
+    100124: chest
+    100126: chest_001
+    100128: chest_002
+    100130: foot_l
+    100132: foot_r
+    100134: forearm_l
+    100136: forearm_r
+    100138: hand_l
+    100140: hand_r
+    100142: head
+    100144: head_003
+    100146: head_004
+    100148: leg_l
+    100150: leg_l_001
+    100152: leg_r
+    100154: leg_r_001
+    100156: neck
+    100158: shoulder_l
+    100160: shoulder_r
+    100162: thigh_l
+    100164: thigh_l_001
+    100166: thigh_l_002
+    100168: thigh_r
+    100170: thigh_r_001
+    100172: thigh_r_002
+    100174: torso
     400000: Char_2_Final
     400002: Char_2_Final_001
     400004: Character_2_geometry1
@@ -113,6 +147,40 @@ ModelImporter:
     400102: Root3
     400104: Spine
     400106: Spine_0
+    400108: Armature
+    400110: Bone
+    400112: Bone_001
+    400114: Bone_002
+    400116: Bone_003
+    400118: Bone_004
+    400120: Bone_005
+    400122: Bone_006
+    400124: chest
+    400126: chest_001
+    400128: chest_002
+    400130: foot_l
+    400132: foot_r
+    400134: forearm_l
+    400136: forearm_r
+    400138: hand_l
+    400140: hand_r
+    400142: head
+    400144: head_003
+    400146: head_004
+    400148: leg_l
+    400150: leg_l_001
+    400152: leg_r
+    400154: leg_r_001
+    400156: neck
+    400158: shoulder_l
+    400160: shoulder_r
+    400162: thigh_l
+    400164: thigh_l_001
+    400166: thigh_l_002
+    400168: thigh_r
+    400170: thigh_r_001
+    400172: thigh_r_002
+    400174: torso
     2300000: Cone
     2300002: Cylinder
     2300004: Cylinder_001
@@ -130,6 +198,8 @@ ModelImporter:
     7400002: Armature_001__87_a_U1_M_P_idle_Neutral__Fb_p0_No_1__87_a_U1_M_P
     7400004: Armature__1_a_U1_M_P_WalkForward_NtrlFaceFwd__Fb_p0_No_0_PJ_3__
     7400006: Armature__24_a_U1_M_P_RunForward_NtrlFaceFwd__Fb_p0_No_0_PJ_10_
+    7400008: ArmatureAction
+    7400010: Armature__1_a_U1_M_P_WalkForward_NtrlFaceFwd__Fb_p0_No_0_PJ_000
     9500000: //RootNode
     13700000: Character_2_geometry1
   materials:
