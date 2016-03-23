@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/yellowMode.unity
+- path: Assets/_Scenes/minigame.unity
   isLoaded: 1
   isActive: 1
